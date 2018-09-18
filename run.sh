@@ -23,6 +23,7 @@ docker run \
         --restart="unless-stopped" \
         --cpus="$cpus" \
         --memory="$memory" \
-	--volume="/security/mail_srv0:/security/mail_srv0:ro" \
+	--volume="/security/mail_srv1:/security/mail_srv1:ro" \
+	--volume="/security/mail_srv2:/security/mail_srv2:ro" \
         "$container_image" \
 	/bin/bash
